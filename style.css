@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 20px;
+    font-family: 'Piazzolla', serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    position: relative;
+    background-image: linear-gradient(rgba(62, 20, 20, 0.4), rgba(62, 20, 20, 0.4)), url(back.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    color: #555;
+}
+.container {
+    width: 1000px;
+    background-color: #fff;
+    position: relative;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 2px 10px #5f5f5f;
+}
+
+.player-0-panal,
+.player-1-panal {
+    width: 50%;
+    height: 550px;
+    float: left;
+    background-color: #fff;
+    position: relative;
+}
+.player-name {
+    font-weight: 100;
+    font-size: 200%;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+#current-score-0,
+#current-score-1 {
+    text-align: center;
+    font-weight: 100;
+    color: #EB4D4D;
+    font-size: 300%;
+}
+
+#dice-pic {
+    width: 100px;
+    height: auto;
+    position: absolute;
+    left: 45%;
+    top: 125px;
+    box-shadow: 2px 2px 5px #808080;
+}
+
+/* BUTTONS */
+
+button {
+    width: 200px;
+    background: none;
+    color: #555;
+    font-weight: 300;
+    font-size: 120%;
+    border: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+button:focus {
+    outline: none;
+}
+
+button:hover { font-weight: 600; }
+button:hover ion-icon { margin-right: 25px; }
+
+ion-icon {
+    color: #EB4D4D;
+    margin-right: 15px;
+    font-size: 150%;
+    font-weight: 100;
+    margin-bottom: -10px;
+    transition: margin-right 0.3s;
+}
+
+.btn-new {
+    position: absolute;
+    left: 40%;
+    top: 40px;
+}
+.btn-roll {
+    position: absolute;
+    left: 40%;
+    top: 400px;
+}
+.btn-hold {
+    position: absolute;
+    left: 40%;
+    top: 450px;
+}
+
+.score {
+    width: 130px;
+    height: 80px;
+    margin: 150px auto 10px auto;
+    text-align: center;
+    background-color: #EB4D4D;
+}
+.score p {
+    font-size: 80%;
+    margin-top: 10px;
+}
+.current-score {
+    color: #fff;
+    font-size: 200%;
+}
+
+.final-score {
+    background-color: #efefef;
+    position: absolute;
+    left: 43%;
+    top: 500px;
+    padding: 10px;
+    width: 150px;
+    height: 30px;
+    font-size: 80%;
+    font-family: 'Piazzolla', serif;
+    font-weight: 300;
+    text-align: center;
+    color: #555;
+    text-transform: uppercase;
+    border: 1px solid #555;
+}
+.final-score:focus { outline: none }
+
+.active {
+    background-color: #f7f7f7;
+}
+.active .player-name { font-weight: 300; }
+
+.active .player-name::after {
+    content: "\2022";
+    position: absolute;
+    font-size: 60px;
+    color: #EB4D4D;
+    top: 80px;
+    right: 80px;
+}
+.winner { background-color:  #ececec; }
+.winner .player-name { font-weight: 300; color: #EB4D4D}
+
+.winner .current-score::after {
+    content: "chicken dinner!";
+    position: absolute;
+    font-size: 60%;
+    color: #EB4D4D;
+    top: 350px;
+    right: 130px;
+}

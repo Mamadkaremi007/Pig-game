@@ -1,0 +1,98 @@
+@media only screen and (max-width: 1200px) {
+    body {
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    body { font-size: 18px; }
+    .container {
+        width: 800px;
+        height: 400px;
+        margin-top: 50px;
+    }
+    .player-0-panal,
+    .player-1-panal { height: auto; }
+    .btn-new { left: 38%; }
+    .btn-roll { left: 38%; top: 300px; }
+    .btn-hold { left: 38%; top: 350px; }
+    .final-score { left: 40%; top: 440px; }
+    .winner .current-score::after {
+        font-size: 50%;
+        color: #EB4D4D;
+        top: 350px;
+        right: 110px;
+    }
+    #dice-pic {
+        width: 80px;
+        height: auto;
+    }
+}
+@media only screen and (max-width: 767px) {
+    body { font-size: 15px; }
+    .container { width: 650px; }
+    .btn-new { left: 35%; top: 30px; }
+    .btn-roll { left: 35%; top: 330px; }
+    .btn-hold { left: 35%; top: 370px; }
+    .final-score { left: 38%; top: 420px; }
+    ion-icon {
+        margin-right: 10px;
+        font-size: 130%;
+        margin-bottom: -6px;
+    }
+    button:hover ion-icon { margin-right: 20px; }
+    .active .player-name::after {
+        top: 73px;
+        right: 60px;
+    }
+    #dice-pic {
+        width: 60px;
+        height: auto ;
+        left: 45%;
+    }
+    .winner .current-score::after {
+        font-size: 45%;
+        top: 300px ;
+        right: 100px;
+    }
+    .score p {
+        font-size: 100%;
+    }
+}
+@media only screen and (max-width: 480px) {
+    body { font-size: 13px; }
+    .container { 
+        width: 350px;
+        margin-top: 5%;
+    }
+    .btn-new { left: 22%; top: 30px; }
+    .btn-roll { left: 22%; top: 330px; }
+    .btn-hold { left: 22%; top: 360px; }
+    .final-score { left: 30%; top: 420px; }
+    ion-icon {
+        margin-right: 8px;
+        font-size: 120%;
+        margin-bottom: -5px;
+    }
+    button:hover ion-icon { margin-right: 12px; }
+    
+    .score {
+        width: 80px;
+        height: 55px;
+        margin: 120px auto 10px auto;
+    }
+    .active .player-name::after { top: 85px; right: 8px; font-size: 40px; }
+    #dice-pic {
+        width: 50px;
+        height: auto ;
+        left: 43%;
+        top: 150px;
+    }
+    .winner .current-score::after {
+        font-size: 40%;
+        top: 280px ;
+        right: 40px;
+    }
+    
+    .player-0-panal,
+    .player-1-panal { height: 500px; }
+}
